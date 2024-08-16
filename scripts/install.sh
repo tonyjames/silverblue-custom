@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
-INCLUDED_PACKAGES=$(jq -r ".include | (.containers[], .fonts[], .misc[], .multimedia[])" /shared/packages.json)
+INCLUDED_PACKAGES=$(jq -r ".include | (.containers[], .fonts[], .misc[], .multimedia[], .virtualization[])" /shared/packages.json)
 EXCLUDED_PACKAGES=$(jq -r ".exclude | (.misc[], .multimedia[])" /shared/packages.json)
 
 rpm-ostree install \
