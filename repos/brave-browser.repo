@@ -4,4 +4,3 @@ baseurl=https://brave-browser-rpm-release.s3.brave.com/$basearch
 gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 enabled=1
 gpgcheck=1
-repo_gpgcheck=0
