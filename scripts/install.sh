@@ -8,9 +8,6 @@ rpm-ostree install \
   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${RELEASE}.noarch.rpm \
   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${RELEASE}.noarch.rpm
 
-rpm --import https://dl.google.com/linux/linux_signing_key.pub
-rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-
 EXCLUDED_PACKAGES=$(jq -r ".exclude | (.multimedia[])" /shared/packages.json)
 rpm-ostree override remove ${EXCLUDED_PACKAGES}
 

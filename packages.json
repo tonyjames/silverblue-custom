@@ -17,9 +17,7 @@
       "redhat-text-fonts"
     ],
     "misc": [
-      "1password",
       "adw-gtk3-theme",
-      "brave-browser",
       "dbus-x11",
       "fastfetch",
       "firewall-config",
@@ -28,7 +26,6 @@
       "genisoimage",
       "gnome-epub-thumbnailer",
       "gnome-tweaks",
-      "google-chrome-stable",
       "gvfs-nfs",
       "krb5-workstation",
       "lshw",
