@@ -11,7 +11,7 @@ rpm-ostree install \
 EXCLUDED_PACKAGES=$(jq -r ".exclude | (.multimedia[])" /shared/packages.json)
 rpm-ostree override remove ${EXCLUDED_PACKAGES}
 
-INCLUDED_PACKAGES=$(jq -r ".include | (.containers[], .fonts[], .misc[], .multimedia[])" /shared/packages.json)
+INCLUDED_PACKAGES=$(jq -r ".include | (.containers[], .fonts[], .misc[], .multimedia[], .virtualization[])" /shared/packages.json)
 rpm-ostree install ${INCLUDED_PACKAGES}
 
 EXCLUDED_PACKAGES=$(jq -r ".exclude | (.misc[])" /shared/packages.json)
