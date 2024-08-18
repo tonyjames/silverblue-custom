@@ -9,7 +9,6 @@ RUN --mount=type=bind,from=shared,src=/,dst=/shared \
     mkdir -p /var/lib/alternatives && \
     /shared/scripts/install.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
-    cp -rp /opt/* /var/opt/ && \
     rpm-ostree cleanup -m && \
     ostree container commit && \
     mkdir -p /var/lib && \
