@@ -73,6 +73,7 @@
     ],
     "virtualization": [
       "edk2-ovmf",
+      "gnome-boxes",
       "libvirt",
       "qemu",
       "qemu-char-spice",
